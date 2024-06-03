@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f5f4ee;
+}
+/* navbar */
+#main{
+    list-style: none;
+}
+nav{
+    /* border: 1px solid red; */
+    height: 50px;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 2px;
+    background-color: #f5f4ee;
+    column-gap: 17vw;
+}
+nav> img{
+    margin-left: 20px;
+}
+nav > img:first-child {
+    height: 55px;
+}
+
+li{
+    display: flex;
+    /* column-gap: 13px; */
+    margin-left: 20px;
+}
+#main{
+    display: flex;
+    font-size: 16px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8vh;
+    font-family: fantasy;
+    font-weight: 500;
+    color: #0e595a;
+}
+.upper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 28px;
+}
+#leftover:hover {
+    color: #ec6749;
+    transition: color 0.4s ease;
+}
+
+.upper > p:hover {
+    color: #ec6749;
+    transition: color 0.4s ease;
+}
+
+#search{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #ec6749;
+    text-align: center;
+    border: none;
+}
+.arrowbutton > img:hover {
+    transform: rotate(180deg);
+    transition: 0.5s all ease;
+}
+#search:hover{
+    width: 54px;
+    height: 54px;
+    background-color: #695b7b;
+    transition: 0.5s all ease;
+}
+.arrowbutton > img {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+.arrowbutton{
+    border: none;
+    background-color:#f5f4ee ;
+}
+#navarrow{
+    height: 17px;
+    width: 17px;
+}
+p{
+    padding: 10px;
+}
+
+/* sub container */
+.subcontainer{
+    height: fit-content;
+    border: 3px solid ;
+    border-color: #0e595a;
+    width: 202px;
+    position: absolute;
+    top: 62px;
+    display: none;
+    background-color: #f5f4ee;
+}
+#sublist{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+    padding: 0;
+    margin: 0;
+
+}
+#sublist > li{
+    height: 56px;
+    width: 202px;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 300;
+  
+}
+#sublist > li:hover{
+    background-color: #0e595a;
+    color: white;
+    transition: 0.8s all ease;
+}
+
+/* LANDINGPAGE */
+#landingpage{
+    height: 80vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* row-gap: 1px; */
+}
+
+#landingpage > h3{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0e595a;
+    
+}
+#landingpage > h1{
+    font-size: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 96px;
+
+}
+#landingpage > p{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0e595a;
+    text-align: center;
+}
+#project:hover{
+    background-color: #0e595a;
+    color: #f5f4ee;
+    transform: rotate(-10deg);
+    transition: transform 0.5s ease;
+}
+#landingpage > img{
+    position: relative;
+    animation: upAndDown 1.8s ease-in-out infinite;
+}
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(42px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* footer */
+#subfooter{
+    height: 10vh;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    position: sticky;
+    top: 70px;
+    background-color: #f5f4ee;
+    
+}
+.footernav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footernav > li{
+   width: 30%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.nav2{
+    color: grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#li0, #li1, #li2 {
+    border-bottom: 2px solid #f5f4ee;
+    transition: border-bottom 0.3s ease;
+}
+
+#li0{
+    border-bottom: 2px solid #8abfc0 ;
+}
+
+#intro ,#bid ,#desc{
+    height: 90vh;
+
+}
+#intro{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    column-gap: 40px;
+}
+#intro > img{
+    height: 40vw;
+    margin-right: 8vw;
+}
+.description > h1{
+    text-align: left;
+    font-size: 4vw;
+    font-family: system-ui;
+    margin-left: 5vw;
+}
+.description > p{
+    font-size: 20px;
+    font-family: system-ui;
+    margin-left: 5vw;
+}
+#bid{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    column-gap: 70px;
+    padding-top: 15vw;
+}
+.description2 > h1{
+    text-align: left;
+    font-size: 4vw;
+    font-family: system-ui;
+    margin-right: 4vw;
+}
+.description2 > p{
+    font-size: 20px;
+    font-family: system-ui;
+    margin-right: 4vw;
+}
+
+#bid > img{
+    height: 40vw;
+    margin-left: 5vw;
+}
+
+
+#desc{
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    column-gap: 70px;
+    padding-top: 15vw;
+    
+}
+
+#desc > img{
+    height: 43vw;
+    margin-left: 7vw;
+}
+.hiddencontent1{
+    width: 36vw;
+    font-size: 1.2vw;
+    font-family: system-ui;
+    /* display: none; */
+    /* position: relative;
+    bottom: 50px; */
+}
+.hiddencontent2{
+    width: 36vw;
+    font-size: 1.2vw;
+    font-family: system-ui;
+    display: none;
+}
+.hiddencontent3{
+    width: 36vw;
+    font-size: 1.2vw;
+    font-family: system-ui;
+    display: none;
+}

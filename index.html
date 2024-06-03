@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-InExeter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!-- navbar -->
+    <nav>
+        <img src="/img/logo.png" alt="will show">
+        <ul id="main">
+            <li><div class="upper">
+                <p>
+                    PROJECTS
+                </p>
+                <button class="arrowbutton" onclick="submenu(0)">
+                    <img src="/img/icons8-expand-arrow-26.png" id="navarrow">
+                </button>
+            </div>
+                <div id="subcon0" class ="subcontainer">
+                    <ul id="sublist">
+                        <li>ATTRACTIVE <br> STREETS</li>
+                        <li>SUPPORTING <br> BUSINESSES</li>
+                        <li>EXPERIENCES</li>
+                        <li>EVENING ECONOMY</li>
+                        <li>GIFT CARD</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="leftover">CAMPAIGNS</li>
+            <li><div class="upper">
+                <p>
+                    BUSSINESS SUPPORT
+                </p>
+                <button class="arrowbutton" onclick="submenu(1)">
+                    <img src="/img/icons8-expand-arrow-26.png" id="navarrow">
+                </button>
+            </div>
+                <div id="subcon1" class ="subcontainer">
+                    <ul id="sublist">
+                        <li>REQUEST A SERVICE</li>
+                        <li>FAQS</li>
+                        <li>TRAINING</li>
+                        <li>BUSINESS PHOTOGRAPHY</li>
+                    </ul>
+                </div>
+            </li>
+            <li><div class="upper">
+                <p>
+                    ABOUT
+                </p>
+                <button class="arrowbutton" onclick="submenu(2)">
+                    <img src="/img/icons8-expand-arrow-26.png" id="navarrow">
+                </button>
+            </div>
+                <div id="subcon2" class ="subcontainer">
+                    <ul id="sublist">
+                        <li>WHAT IS A INEXETER?</li>
+                        <li>MEET THE TEAM</li>
+                        <li>RESOURCES</li>
+                        <li>PARTNERS</li>
+                        <li>INEXERER BRANDING</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="leftover">CONTACT</li>
+            <button id="search"><img src="/img/icons8-search-32.png"  alt=""></button>
+        </ul>
+    </nav>
+    <!-- firstpage -->
+    <section id="landingpage">
+        <h3>InExeter</h3>
+        <h1 style="color: #526ab0;">Business</h1>
+        <h1 style="color: #ec6749;">Improvement</h1>
+        <h1 style="color: #eca005;">District</h1>
+        <p>We celebrate the city champion and support local business <br>and deliver change</p>
+        <p id="project" style="font-family: fantasy;
+        font-size: 15px;
+        font-weight: 100;
+        border-bottom: 2px solid #0e595a;">OUR PROJECTS</p>
+        <img src="/img/icons8-down-arrow-50 (1).png" alt="">
+    </section>
+    <section id="subfooter">
+        <ul class="footernav">
+            <li id="li0"><p class="nav2" id="nav0">We Are InExeter</p></li>
+            <li id="li1"><p class="nav2" id="nav1">What is a BID?</p></li>
+            <li id="li2"><p class="nav2" id="nav2">What WE DO</p></li>
+        </ul>
+    </section>
+
+    <!-- intro -->
+    <section id="intro" onmouseover="intro()"  onmouseleave="introl()">
+        <div class="description">
+            <h1>We are InExeter.</h1>
+            <p>InExeter is Exeter’s business improvement district (BID). We are a not-for-profit organisation run by businesses for businesses. Our mission is to celebrate Exeter, support local businesses, and drive positive change.
+                <br>
+                <br>
+                A small city that packs a big punch, Exeter is one of the most vibrant, attractive, and historically interesting cities in England.
+                <br>
+                <br>
+                As a community of businesses, we believe that collectively, we can make a positive difference to the city.
+                <br>
+                <br>
+                We bring benefit to businesses by investing in projects, services and initiatives that enhance our city’s appeal to create an environment where business can flourish.</p>
+        </div>
+        <img src="/img/weareinexeter.png" alt="">
+    </section>
+    
+    <!-- bid -->
+    <section id="bid" onmouseover="bid()"  onmouseleave="bidl()">
+        <img src="/img/weareinexeter.png" alt="">
+        <div class="description2">
+            <h1>What is a BID?.</h1>
+            <p>A BID (Business Improvement District) is a designated commercial area in which businesses benefit from a wide range of additional services over and above those funded through the standard commercial rates and council services.
+                <br>
+                <br>
+                Constituted by UK law in 2004, a BID is a powerful, independent voice representing the interests of a varied community of organisations, committed to working together to ensure that the area continues to progress whilst providing the best possible trading and working environment for its occupiers.</p>
+        </div>
+    </section>
+    <!-- desc -->
+    <section id="desc" onmouseover="desc()"  onmouseleave="descl()">
+        <img src="/img/weareinexeter.png" alt="">
+        <div class="description2">
+            <h1>What We Do.</h1>
+            <p>We aim to transform Exeter for everyone who works, lives or visits here. Our initiatives focus on the three strategic themes of our Business Plan 2020-25:</p>
+            <div class="special">
+                <div style="display: flex;
+                justify-content: space-between;
+                margin-right: 5vw;
+                margin-top: 3vw;
+                align-items: center;
+                flex-wrap: wrap;"
+                >
+                    <h3 style="font-family: sans-serif;
+                    font-size: 20px;">Welcoming & Attractive Streets</h3>
+                    <button onclick="rotate(1)" id="rot1" style="border: none; background-color: #f5f4ee; "><img src="/img/icons8-plus-50 (1).png" alt=""></button>
+                </div>
+                <p class="hiddencontent1">InExeter plays a vital role in ensuring the cleanliness and vibrancy of the streetscape. We aim to create a positive, welcoming and accessible city for those who live, work and visit Exeter. Enjoyment of and perception of our city streets should be positive and welcoming. We also invest heavily in landscaping, planting and greening initiatives.</p>
+            <div class="special">
+                <div style="display: flex;
+                justify-content: space-between;
+                margin-right: 5vw;
+                margin-top: 3vw;
+                align-items: center;"
+                >
+                    <h3 style="font-family: sans-serif;
+                    font-size: 20px;">Supporting & Informing business</h3>
+                    <button onclick="rotate(2)" id="rot2" style="border: none; background-color: #f5f4ee; "><img src="/img/icons8-plus-50 (1).png" alt=""></button>
+                </div>
+            <div class="special">
+                <div style="display: flex;
+                justify-content: space-between;
+                margin-right: 5vw;
+                margin-top: 3vw;
+                align-items: center;"
+                >
+                    <h3 style="font-family: sans-serif;
+                    font-size: 20px;">Experiences</h3>
+                    <button onclick="rotate(3)" id="rot3" style="border: none; background-color: #f5f4ee; "><img src="/img/icons8-plus-50 (1).png" alt=""></button>
+                </div>
+                <p></p>
+            </div>
+            
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
