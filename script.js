@@ -55,7 +55,7 @@ function descl(){
 let con2 = 0 
 function rotate(n){
    let button = document.getElementById(`rot${n}`)
-   let hidded = document.getElementsByClassName(`hiddencontent${n}`)
+   let hidded = document.getElementById(`hiddencontent${n}`)
    con2++
    if(con2%2!=0){
        button.style.transform = "rotate(45deg)"
