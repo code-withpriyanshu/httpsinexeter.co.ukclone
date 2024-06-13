@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home-InExeter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home-InExeter</title>
+        <link rel="stylesheet" href="/smooth.css">
+        <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            
+            
+            <div id="minicircle">
+            </div>
+            <div id="veryimp">
    
     <!-- navbar -->
-    <nav>
+    <nav id="navbar">
         <img src="/img/logo.png" alt="will show">
         <ul id="main">
             <li><div class="upper">
@@ -72,16 +78,17 @@
     </nav>
     <!-- firstpage -->
     <section id="landingpage">
-        <h3>InExeter</h3>
-        <h1 style="color: #526ab0;">Business</h1>
-        <h1 style="color: #ec6749;">Improvement</h1>
-        <h1 style="color: #eca005;">District</h1>
-        <p>We celebrate the city champion and support local business <br>and deliver change</p>
+        <h3 class="first-page-anm">InExeter</h3>
+        <h1 style="color: #526ab0;" class="first-page-anm">Business</h1>
+        <h1 style="color: #ec6749;" class="first-page-anm">Improvement</h1>
+        <h1 style="color: #eca005;" class="first-page-anm">District</h1>
+        <p class="first-page-anm">We celebrate the city champion and support local business <br>and deliver change</p>
         <p id="project" style="font-family: fantasy;
         font-size: 15px;
         font-weight: 100;
-        border-bottom: 2px solid #0e595a;">OUR PROJECTS</p>
-        <img src="/img/icons8-down-arrow-50 (1).png" alt="">
+        border-bottom: 2px solid #0e595a;
+        z-index: 3;">OUR PROJECTS</p>
+        <img src="/img/icons8-down-arrow-50 (1).png" alt="" id="animage">
     </section>
     <section id="subfooter">
         <ul class="footernav">
@@ -136,7 +143,7 @@
                 >
                     <h3 style="font-family: sans-serif;
                     font-size: 20px;">Welcoming & Attractive Streets</h3>
-                    <button onclick="rotate(1)" id="rot1" style="border: none; background-color: #f5f4ee; "><img src="/img/icons8-plus-50 (1).png" alt=""></button>
+                    <button onclick="rotate(1)" id="rot1" style="border: none; background-color: #f5f4ee; "><img id="img1" src="/img/icons8-plus-50 (1).png" alt=""></button>
                 </div>
                 <p id="hiddencontent1">InExeter plays a vital role in ensuring the cleanliness and vibrancy of the streetscape. We aim to create a positive, welcoming and accessible city for those who live, work and visit Exeter. Enjoyment of and perception of our city streets should be positive and welcoming. We also invest heavily in landscaping, planting and greening initiatives.</p>
             <div class="special">
@@ -148,7 +155,7 @@
                 >
                     <h3 style="font-family: sans-serif;
                     font-size: 20px;">Supporting & Informing business</h3>
-                    <button onclick="rotate(2)" id="rot2" style="border: none; background-color: #f5f4ee; "><img src="/img/icons8-plus-50 (1).png" alt=""></button>
+                    <button onclick="rotate(2)" id="rot2" style="border: none; background-color: #f5f4ee; "><img id="img2" src="/img/icons8-plus-50 (1).png" alt=""></button>
                 </div>
                 <p id="hiddencontent2">InExeter are gatekeepers for a vast amount of key city centre data including footfall, vacancy rates, new business openings, spend and gift card sales.</p>
             <div class="special">
@@ -160,13 +167,13 @@
                 >
                     <h3 style="font-family: sans-serif;
                     font-size: 20px;">Experiences</h3>
-                    <button onclick="rotate(3)" id="rot3" style="border: none; background-color: #f5f4ee; "><img src="/img/icons8-plus-50 (1).png" alt=""></button>
+                    <button onclick="rotate(3)" id="rot3" style="border: none; background-color: #f5f4ee; "><img id="img3" src="/img/icons8-plus-50 (1).png" alt=""></button>
                 </div>
                 <p id="hiddencontent3">To drive footfall and encourage longer dwell times InExeter work to deliver a calendar of activity, animation and experiences throughout the year. InExeter celebrate and champion city businesses and work in partnership with Visit Exeter to promote the city.</p>
             </div>
             
         </div>
-        <button id="submit"><p>PROJECTS</p><img src="/img/icons8-arrow-right-50.png" alt="" srcset=""></button>
+        <button id="submit"><p>PROJECTS</p><div class="arrow-button"></div></button>
     </section>
     <section id="how">
         <h1>How we are doing this</h1>
@@ -178,18 +185,75 @@
             </div>
             <div class="three">
                 <h1>Our Project</h1>
-                <p></p>
-                <p></p>
+                <p class="three-desc">The InExeter Board is made up of representatives of businesses and organisations in the InExeter area who are liable to pay the BID levy. All organisations liable to pay the BID levy are automatically company members.</p>
+                <p class="three-special">LATEST PROJECTS</p>
             </div>
             <div class="three">
                 <h1>Contact Us</h1>
-                <p>The InExeter Board is made up of representatives of businesses and organisations in the InExeter area who are liable to pay the BID levy. All organisations liable to pay the BID levy are automatically company members.</p>
-                <p>OUR TEAM</p>
+                <p class="three-desc">The InExeter Board is made up of representatives of businesses and organisations in the InExeter area who are liable to pay the BID levy. All organisations liable to pay the BID levy are automatically company members.</p>
+                <p class="three-special">CONTACT US</p>
             </div>
             
         </div>
     </section>
-    <section id="social"></section>
-    <script src="/script.js"></script>
+    <section id="social">
+        <div class="bg">
+            <img src="/img/british.png" alt="">
+            </div>
+            <div class="social">
+
+                <h1>we are social</h1>
+                <h3>Come follow our journey.</h3>
+            </div>
+            <div class="connect">
+                <h1>Let's Connect</h1>
+                <h4>Your InExeter team welcomes ideas and news from all Exeter businesses</h4>
+                <div class="links">
+                    <button class="linkedin"><img src="https://img.icons8.com/ios-glyphs/30/000000/linkedin.png" alt="linkedin"/></button>
+                    <button class="youtube"><img  src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube-play"/></button>
+                    <button class="twitter"><img  src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="twitter"/></button>
+                    <button class="facebook"><img  src="https://img.icons8.com/color/48/000000/facebook-new.png" alt="facebook-new"/></button>
+                    <button class="insta"><img  src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png" alt="instagram-new--v1"/></button>
+                </div>
+                <button class="second"><p id="contact">CONTACT US</p><div class="  arrow-button2"></div></button>
+            </div>
+    </section>
+
+    <footer>
+        <div class="lol">
+
+    
+            <img src="/img/inexeter-white.svg" alt="">
+            <div class="same">
+                <h2>More from us</h2>
+                <ul class="finalul">
+                    <li>ABOUT INEXETER</li>
+                    <li>RESOURCES</li>
+                    <li>MEET THE TEAM</li>
+                    <li>PARTNERS</li>
+                </ul>
+            </div>
+            <div class="same">
+                <h2>Quick Links</h2>
+                <ul class="finalul">
+                    <li>Projects</li>
+                    <li>Events</li>
+                    <li>Gift Card</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="same">
+                <h2>Key Policies</h2>
+                <ul class="finalul">
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+        <p id="last">© 2024 All Rights Reserved. Website Design Exeter ❤️  Dirty Martini Marketing ®</p>
+            </footer>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/script.js"></script>
 </body>
 </html>
